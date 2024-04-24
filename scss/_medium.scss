@@ -1,0 +1,33 @@
+header {
+    padding: 2rem $gutter;
+    h1 {
+        font-size: 2rem;
+    }
+}
+
+#headerWrapper {grid-row-start: 1;}
+#navWrapper {grid-row-start: 2;}
+#mainWrapper {grid-row-start: 3;}
+#footerWrapper {grid-row-start: 4;}
+
+nav {
+    height: auto;
+    ul {
+        display: flex;
+        justify-content: space-between;
+        border: none;
+        margin-top: 0;
+        margin-bottom: 0;
+        li {
+            border: none;
+            width: 100%;
+            a {
+                text-align: center;
+            }
+        }
+    }
+}
+
+#hamburger, #closeX {
+    display: none;
+}

@@ -1,0 +1,17 @@
+header, main, footer {
+    max-width: 60rem;
+    margin: auto;
+}
+
+nav {
+    display: flex;
+    justify-content: flex-end;
+    ul {
+        display: flex;
+        justify-content: flex-end;
+        width: 50%;
+        li {
+            width: 100%;
+        }
+    }
+}

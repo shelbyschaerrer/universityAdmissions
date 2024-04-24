@@ -1,0 +1,174 @@
+/* Prevent adjustments of font size after orientation changes.  */
+html {
+    -moz-text-size-adjust: none;
+    -webkit-text-size-adjust: none;
+    text-size-adjust: none;
+    height: 100%;
+  }
+  
+  /*---- apply a natural box layout model to all elements -------*/
+  * {
+    -moz-box-sizing: border-box;
+    -webkit-box-sizing: border-box;
+    box-sizing: border-box;
+  }
+
+body {
+    height: 100%;
+    font-family: $defaultFont;
+    font-weight: $normalWeight;
+    color: $fontColor;
+    display: grid;
+}
+
+#headerWrapper {
+    background-color: #769DA6;
+    color: $secondaryColor;
+    grid-row-start: 1;
+}
+
+header {
+    display: grid;
+    grid-template-columns: 51px auto 44px;
+    align-items: center;
+    padding: .5rem 5vw;
+    h1 {
+        margin: 0;
+        margin-left: 2rem;
+        font-size: 1.2rem;
+        font-weight: $normalWeight;
+        color: black;
+    }
+}
+
+main h1 {
+    margin-left: 1rem;
+}
+
+#spacer {
+    height: 32rem; //is this the right way to fix the thanks page? Probably not. But I don't want to think about it anymore.
+}
+
+#hamburger a, #closeX a {
+    display: block;
+    padding: .8rem 2vw;
+    font-size: 1.5rem;
+    color: black;
+    text-decoration: none;
+    text-align: right;
+}
+
+#closeX a {margin-right: 5vw;}
+
+#navWrapper {
+    background-color: #D96F32;
+    grid-row-start: 4;
+}
+
+nav {
+    height: 100vh;
+    ul {
+        border-bottom: 1px solid white;
+        list-style-type: none;
+        width: 100%;
+        padding-left: 0;
+    }
+    ul li {border-top: 1px solid #eee;}
+    ul li a {
+        display: block;
+        color: #333;
+        padding: .9rem 5vw;
+        text-decoration: none;
+        text-align: right;
+        color: white;
+    }
+    ul li a:hover {
+        background-color: #97b2b8;
+    }
+    ul li.active a {
+        background-color: #dda17e;
+        color: black;
+    }
+}
+
+#mainWrapper {grid-row-start: 2;}
+
+
+
+//form stuff
+.myForm {
+    margin: 1rem $gutter;
+    label {
+        display: block;
+        font-size: 1rem;
+        padding-top: .2rem;
+        color: #8C471F;
+    }
+    h3 {
+        font-size: 1.2rem;
+        color: #D96F32;
+        margin: 1.5;
+        padding-bottom: 5px;
+        border-bottom: 2px solid #8c471f63;
+    }
+    input[type=text],
+    input[type=tel],
+    input[type=email],
+    input[type=number],
+    input[type=password],
+    select {
+        display: block;
+        margin: .1rem 0 1rem 0;
+        border: 1px solid #769DA6;
+        border-radius: 3px;
+        font-size: 1rem;
+        width: 300px;
+        padding: .8rem $gutter;
+    }
+
+    input:required {
+        border-color: red;
+        border-style: dashed;
+        border-width: 2px;
+    }
+    input:required:valid { 
+        border-color: green;
+        border-style: solid;
+    }
+
+    input[type=submit] {
+        border: none;
+        border-radius: 5px;
+        padding: .75rem 1.5rem;
+        width: 300px;
+        font-size: 1.2rem;
+        -webkit-appearance: none;
+        appearance: none;
+        background-color: #8C471F;
+        color: white;
+        &:hover {
+            background-color: #769DA6;
+            color: black;
+        }
+    }
+
+}
+
+
+// begin the footer
+
+#footerWrapper {
+    background-color: #769DA6;
+    grid-row-start: 3;
+}
+
+footer {
+    padding: .5rem $gutter;
+    
+    p {
+        margin: 0;
+        text-align: center;
+        color: black;
+    }
+}
+
