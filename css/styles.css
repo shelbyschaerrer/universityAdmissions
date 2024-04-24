@@ -392,14 +392,14 @@ nav ul li {
 }
 nav ul li a {
   display: block;
-  color: #333;
   padding: 0.9rem 5vw;
   text-decoration: none;
   text-align: right;
-  color: white;
+  color: black;
 }
 nav ul li a:hover {
   background-color: #97b2b8;
+  color: black;
 }
 nav ul li.active a {
   background-color: #dda17e;
@@ -422,7 +422,7 @@ nav ul li.active a {
 .myForm h3 {
   font-size: 1.2rem;
   color: #D96F32;
-  margin: 1.5;
+  margin: 1.5rem;
   padding-bottom: 5px;
   border-bottom: 2px solid rgba(140, 71, 31, 0.3882352941);
 }

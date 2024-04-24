@@ -76,14 +76,14 @@ nav {
     ul li {border-top: 1px solid #eee;}
     ul li a {
         display: block;
-        color: #333;
         padding: .9rem 5vw;
         text-decoration: none;
         text-align: right;
-        color: white;
+        color: black;
     }
     ul li a:hover {
         background-color: #97b2b8;
+        color: black;
     }
     ul li.active a {
         background-color: #dda17e;
